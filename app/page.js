@@ -1,7 +1,7 @@
 export default function Home() {
   // Replace with your actual configuration details
   const CLIENT_ID = "YOUR_DISCORD_BOT_CLIENT_ID"; 
-  const REDIRECT_URI = "https://your-vercel-domain.vercel.app/api/auth";
+  const REDIRECT_URI = "https://your-site-name.netlify.app/api/auth";
   const DISCORD_AUTH_URL = `https://discord.com/api/oauth2/authorize?client_id=${CLIENT_ID}&redirect_uri=${encodeURIComponent(REDIRECT_URI)}&response_type=code&scope=identify%20guilds`;
 
   return (
